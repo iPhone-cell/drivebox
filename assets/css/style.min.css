@@ -322,6 +322,7 @@ p {
 button {
   outline: none;
   background: none;
+  border: 0;
 }
 button:focus {
   outline: none;
@@ -337,6 +338,19 @@ button:focus {
   width: 100%;
   padding: 0 28px;
   margin: 0 auto;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
 }
 
 a {
@@ -653,11 +667,97 @@ ul li {
   text-align: right;
 }
 
+.also_like {
+  padding-top: 80px;
+}
+
+.also_like__rows {
+  margin-top: 64px;
+}
+
+.also_like__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.also_like__row:last-child {
+  margin-bottom: 0;
+}
+.also_like__row p {
+  margin-top: 24px;
+  line-height: 133%;
+}
+
+.also_like__item {
+  width: 33%;
+}
+
+.also_like__item_title h3 {
+  margin-top: 16px;
+}
+
+.you_may_also_like {
+  margin: 120px 0 80px;
+}
+
+.you_may_also_like__row {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.you_may_also_like__card {
+  border-radius: 6px;
+  padding: 24px;
+  background: #fff;
+  position: relative;
+  color: #000;
+}
+.you_may_also_like__card:hover {
+  color: #000;
+}
+.you_may_also_like__card hr {
+  margin-top: 24px;
+  border: 1px solid #000;
+}
+
+.you_may_also_like__card_info {
+  padding-top: 16px 0;
+}
+
+.you_may_also_like__card_rate {
+  display: flex;
+  align-items: center;
+}
+
+.you_may_also_like__card_stars {
+  margin-right: 4px;
+}
+
+.you_may_also_like__card_title {
+  margin-top: 24px;
+}
+
+.you_may_also_like__card_price {
+  margin-top: 24px;
+}
+
+.you_may_also_like__card_wish {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
 .footer {
   background: #000;
   padding: 80px 0 24px;
   color: #fff;
   display: flex;
+}
+.footer .container {
+  position: relative;
 }
 
 .footer__main {
@@ -681,6 +781,7 @@ ul li {
   max-width: 392px;
   width: 100%;
   justify-content: space-between;
+  min-height: 384px;
 }
 
 .footer__nav ul {
@@ -709,6 +810,7 @@ ul li {
 .footer__newsletter form {
   position: relative;
   width: 100%;
+  margin-top: 48px;
 }
 .footer__newsletter form input {
   width: 100%;
@@ -736,4 +838,20 @@ ul li {
   right: 8px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.back {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 100px;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.back img {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
 }
