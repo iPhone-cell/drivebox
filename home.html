@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Drivebox</title>
+</head>
+<body>
+    <!-- SVG Wishlists -->
+    <svg display="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="wishWithBackground" viewBox="0 0 32 32">
+
+            <path d="M1.4875 9.3875L7.13438 14.6594C7.36875 14.8781 7.67812 15 8 15C8.32187 15 8.63125 14.8781 8.86563 14.6594L14.5125 9.3875C15.4625 8.50312 16 7.2625 16 5.96562V5.78437C16 3.6 14.4219 1.7375 12.2688 1.37812C10.8438 1.14062 9.39375 1.60625 8.375 2.625L8 3L7.625 2.625C6.60625 1.60625 5.15625 1.14062 3.73125 1.37812C1.57812 1.7375 0 3.6 0 5.78437V5.96562C0 7.2625 0.5375 8.50312 1.4875 9.3875Z"/>
+
+        </symbol>
+    </svg>
+
+    <svg display="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="wish" viewBox="0 0 32 32">
+
+            <path d="M10.5844 21.9469L10.4672 21.8391L2.25469 14.2126C0.815625 12.8766 0 11.0016 0 9.03756V8.88287C0 5.58287 2.34375 2.75162 5.5875 2.13287C7.43437 1.77662 9.32344 2.20318 10.8281 3.26256C11.25 3.56256 11.6438 3.90943 12 4.30787C12.1969 4.08287 12.4078 3.87662 12.6328 3.68443C12.8062 3.53443 12.9844 3.39381 13.1719 3.26256C14.6766 2.20318 16.5656 1.77662 18.4125 2.12818C21.6562 2.74693 24 5.58287 24 8.88287V9.03756C24 11.0016 23.1844 12.8766 21.7453 14.2126L13.5328 21.8391L13.4156 21.9469C13.0313 22.3032 12.525 22.5047 12 22.5047C11.475 22.5047 10.9688 22.3079 10.5844 21.9469ZM11.2078 6.79693C11.1891 6.78287 11.175 6.76412 11.1609 6.74537L10.3266 5.80787L10.3219 5.80318C9.23906 4.58912 7.60312 4.036 6.00937 4.34068C3.825 4.75787 2.25 6.661 2.25 8.88287V9.03756C2.25 10.3735 2.80781 11.6532 3.7875 12.5626L12 20.1891L20.2125 12.5626C21.1922 11.6532 21.75 10.3735 21.75 9.03756V8.88287C21.75 6.66568 20.175 4.75787 17.9953 4.34068C16.4016 4.036 14.7609 4.59381 13.6828 5.80318C13.6828 5.80318 13.6828 5.80318 13.6781 5.80787C13.6734 5.81256 13.6781 5.80787 13.6734 5.81256L12.8391 6.75006C12.825 6.76881 12.8062 6.78287 12.7922 6.80162C12.5812 7.01256 12.2953 7.12975 12 7.12975C11.7047 7.12975 11.4188 7.01256 11.2078 6.80162V6.79693Z"/>
+
+        </symbol>
+    </svg>
+
+
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header__top_wrapper">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img src="assets/images/header/logo.svg" alt="DRIVEBOX">
+                            </a>
+                        </div>
+                        <div class="header__sign-lang">
+                            <a href="" class="header__btn">
+                                Sign in
+                            </a>
+                            <button class="header__btn">
+                                En
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <hr class="header__line">
+                <div class="container">
+                    <div class="header__bottom">
+                        <div class="header__bottom_wrapper">
+                            <nav class="header__nav">
+                                <a href="" class="header__btn first">
+                                    Store
+                                </a>
+                                <a href="" class="header__btn">
+                                    About
+                                </a>
+                                <a href="" class="header__btn">
+                                    Support
+                                </a>
+                            </nav>
+                            <div class="header__nav">
+                                <div class="wishlist__wrapper">
+                                    <button class="header__btn wishlist_btn">
+                                        <p>
+                                            <span>(0)</span> Wishlist
+                                        </p>
+                                        <div class="header__icon">
+                                            <svg>
+                                                <use xlink:href="#wishWithBackground"></use>
+                                            </svg>
+                                        </div>
+        
+                                    </button>
+                                    <div class="wishlist">
+                                        <div class="wishlist__top">
+                                            <p>Wishlist</p>
+                                            <button class="close">
+                                                <span></span>
+                                                <span></span>
+                                            </button>
+                                        </div>
+                                        <div class="wishlist__list">
+                                            <a href="" class="wishlist__item">
+                                                <div class="wishlist__pic">
+                                                    <button class="wishlist__wish">
+                                                        <svg>
+                                                            <use xlink:href="#wishWithBackground"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <div class="wishlist__img">
+                                                        <img src="assets/images/products/1/R56L_main_small.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="wishlist__info">
+                                                    <p class="wishlist__title">
+                                                        R58L - 4G OBD2 GPS Tracker for Vehicle
+                                                    </p>
+                                                    <p class="wishlist__desc">
+                                                        GPS tracker for trucks, cars
+                                                    </p>
+                                                </div>
+                                            </a>
+        
+                                            <a href="" class="wishlist__item">
+                                                <div class="wishlist__pic">
+                                                    <button class="wishlist__wish">
+                                                        <svg>
+                                                            <use xlink:href="#wishWithBackground"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <div class="wishlist__img">
+                                                        <img src="assets/images/products/1/R56L_main_small.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="wishlist__info">
+                                                    <p class="wishlist__title">
+                                                        R58L - 4G OBD2 GPS Tracker for Vehicle
+                                                    </p>
+                                                    <p class="wishlist__desc">
+                                                        GPS tracker for trucks, cars
+                                                    </p>
+                                                </div>
+                                            </a>
+        
+                                            <a href="" class="wishlist__item">
+                                                <div class="wishlist__pic">
+                                                    <button class="wishlist__wish">
+                                                        <svg>
+                                                            <use xlink:href="#wishWithBackground"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <div class="wishlist__img">
+                                                        <img src="assets/images/products/1/R56L_main_small.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="wishlist__info">
+                                                    <p class="wishlist__title">
+                                                        R58L - 4G OBD2 GPS Tracker for Vehicle
+                                                    </p>
+                                                    <p class="wishlist__desc">
+                                                        GPS tracker for trucks, cars
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="header__btn">
+                                    <p>
+                                        <span>(0)</span> Cart
+                                    </p>
+                                    <div class="header__icon">
+                                        <img src="assets/images/header/icons/cart.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            
+            <div class="carousel">
+                <div class="carousel__wrapper">
+                    <a href="">
+                        <img src="assets/images/main_carousel/1.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/images/main_carousel/2.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/images/main_carousel/3.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/images/main_carousel/4.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/images/main_carousel/1.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/images/main_carousel/2.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/images/main_carousel/3.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/images/main_carousel/4.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            
+            <section class="intro">
+                <div class="container">
+                    <div class="intro__info">
+                        <div class="intro__title">
+                            <h1>
+                                Trackers for any vehicle
+                            </h1>
+                            <div class="intro__quantity">
+                                (17 products)
+                            </div>
+                        </div>
+                        <p>
+                            On our website you can find GPS trackers, car video recorders, SIM cards, as well as spare parts for cars and tourist equipment.
+                        </p>
+                        <a href="">
+                            Start shopping
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="benefits">
+                <div class="container">
+                    <div class="intro__title">
+                        <h2>
+                            Benefits
+                        </h2>
+                        <div class="intro__quantity">
+                            (5)
+                        </div>
+                    </div>
+                    <div class="benefits__row">
+                        <p>
+                            GPS tracker for 150 GEL + 1 year of free service!
+                        </p>
+                        <div class="benefits__row_item">
+                            <div class="benefit">
+                                <div class="benefit__icon">
+                                    <img src="assets/images/icons/benefit_check.svg" alt="">
+                                </div>
+                                <p>
+                                    Tracking in 150+ countries
+                                </p>
+                            </div>
+                            <div class="benefit">
+                                <div class="benefit__icon">
+                                    <img src="assets/images/icons/benefit_check.svg" alt="">
+                                </div>
+                                <p>
+                                    SIM card included, unlimited communication
+                                </p>
+                            </div>
+                            <div class="benefit">
+                                <div class="benefit__icon">
+                                    <img src="assets/images/icons/benefit_check.svg" alt="">
+                                </div>
+                                <p>
+                                    No hidden fees, the entire subscription is already included
+                                </p>
+                            </div>
+                            <div class="benefit">
+                                <div class="benefit__icon">
+                                    <img src="assets/images/icons/benefit_check.svg" alt="">
+                                </div>
+                                <p>
+                                    Guaranteed operation for 12 months - then renewal for only 51 GEL/ <br> year!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="popular">
+                <div class="container">
+                    <div class="intro__title">
+                        <h2>
+                            Popular
+                        </h2>
+                        <div class="intro__quantity">
+                            (8)
+                        </div>
+                    </div>
+                    <div class="you_may_also_like__row">
+                        <div class="you_may_also_like__card">
+                            <div class="you_may_also_like__card_img">
+                                <img src="assets/images/you_may_also_like/1.png" alt="">
+                            </div>
+                            <a href="" class="you_may_also_like__card_info">
+                                <div class="you_may_also_like__card_rate">
+                                    <div class="you_may_also_like__card_stars">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                    </div>
+                                    <p>(0)</p>
+                                </div>
+                                <p class="you_may_also_like__card_title">
+                                    S11 Mini GPS Tracker with Audio Recording
+                                </p>
+                                <hr>
+                                <p class="you_may_also_like__card_price">
+                                    <span>$</span>35.99
+                                </p>
+                            </a>
+                            <button class="you_may_also_like__card_wish">
+                                <svg>
+                                    <use xlink:href="#wish"></use>
+                                </svg>
+                            </button>
+                        </div>
+            
+                        <div class="you_may_also_like__card">
+                            <div class="you_may_also_like__card_img">
+                                <img src="assets/images/you_may_also_like/1.png" alt="">
+                            </div>
+                            <a href="" class="you_may_also_like__card_info">
+                                <div class="you_may_also_like__card_rate">
+                                    <div class="you_may_also_like__card_stars">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                    </div>
+                                    <p>(0)</p>
+                                </div>
+                                <p class="you_may_also_like__card_title">
+                                    S11 Mini GPS Tracker with Audio Recording
+                                </p>
+                                <hr>
+                                <div class="you_may_also_like__card_price_sale">
+                                    <p class="you_may_also_like__card_price old">
+                                        <span>$</span>35.99
+                                    </p>
+                                    <p class="you_may_also_like__card_price sale">
+                                        <span>$</span>20.99
+                                    </p>
+                                </div>
+                            </a>
+                            <button class="you_may_also_like__card_wish">
+                                <svg>
+                                    <use xlink:href="#wish"></use>
+                                </svg>
+                            </button>
+                            <div class="you_may_also_like__card_sale">
+                                <a href="">
+                                    Sale
+                                </a>
+                            </div>
+                        </div>
+            
+                        <div class="you_may_also_like__card">
+                            <div class="you_may_also_like__card_img">
+                                <img src="assets/images/you_may_also_like/1.png" alt="">
+                            </div>
+                            <a href="" class="you_may_also_like__card_info">
+                                <div class="you_may_also_like__card_rate">
+                                    <div class="you_may_also_like__card_stars">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                    </div>
+                                    <p>(0)</p>
+                                </div>
+                                <p class="you_may_also_like__card_title">
+                                    S11 Mini GPS Tracker with Audio Recording
+                                </p>
+                                <hr>
+                                <p class="you_may_also_like__card_price">
+                                    <span>$</span>35.99
+                                </p>
+                            </a>
+                            <button class="you_may_also_like__card_wish">
+                                <svg>
+                                    <use xlink:href="#wish"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="new_arrivals">
+                <div class="container">
+                    <div class="intro__title">
+                        <h2>
+                            Popular
+                        </h2>
+                        <div class="intro__quantity">
+                            (8)
+                        </div>
+                    </div>
+                    <div class="you_may_also_like__row">
+                        <div class="you_may_also_like__card">
+                            <div class="you_may_also_like__card_img">
+                                <img src="assets/images/you_may_also_like/1.png" alt="">
+                            </div>
+                            <a href="" class="you_may_also_like__card_info">
+                                <div class="you_may_also_like__card_rate">
+                                    <div class="you_may_also_like__card_stars">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                    </div>
+                                    <p>(0)</p>
+                                </div>
+                                <p class="you_may_also_like__card_title">
+                                    S11 Mini GPS Tracker with Audio Recording
+                                </p>
+                                <hr>
+                                <p class="you_may_also_like__card_price">
+                                    <span>$</span>35.99
+                                </p>
+                            </a>
+                            <button class="you_may_also_like__card_wish">
+                                <svg>
+                                    <use xlink:href="#wish"></use>
+                                </svg>
+                            </button>
+                        </div>
+            
+                        <div class="you_may_also_like__card">
+                            <div class="you_may_also_like__card_img">
+                                <img src="assets/images/you_may_also_like/1.png" alt="">
+                            </div>
+                            <a href="" class="you_may_also_like__card_info">
+                                <div class="you_may_also_like__card_rate">
+                                    <div class="you_may_also_like__card_stars">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                    </div>
+                                    <p>(0)</p>
+                                </div>
+                                <p class="you_may_also_like__card_title">
+                                    S11 Mini GPS Tracker with Audio Recording
+                                </p>
+                                <hr>
+                                <p class="you_may_also_like__card_price">
+                                    <span>$</span>35.99
+                                </p>
+                            </a>
+                            <button class="you_may_also_like__card_wish">
+                                <svg>
+                                    <use xlink:href="#wish"></use>
+                                </svg>
+                            </button>
+                        </div>
+            
+                        <div class="you_may_also_like__card">
+                            <div class="you_may_also_like__card_img">
+                                <img src="assets/images/you_may_also_like/1.png" alt="">
+                            </div>
+                            <a href="" class="you_may_also_like__card_info">
+                                <div class="you_may_also_like__card_rate">
+                                    <div class="you_may_also_like__card_stars">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                        <img src="assets/images/icons/star.svg" alt="">
+                                    </div>
+                                    <p>(0)</p>
+                                </div>
+                                <p class="you_may_also_like__card_title">
+                                    S11 Mini GPS Tracker with Audio Recording
+                                </p>
+                                <hr>
+                                <p class="you_may_also_like__card_price">
+                                    <span>$</span>35.99
+                                </p>
+                            </a>
+                            <button class="you_may_also_like__card_wish">
+                                <svg>
+                                    <use xlink:href="#wish"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="about">
+                <div class="container">
+                    <div class="logo">
+                        <img src="assets/images/about/logo.jpg" alt="">
+                    </div>
+                    <div class="about__info">
+                        <h2>
+                            The best car rental in Georgia!
+                        </h2>
+                        <p>
+                            Our TripBox partners are the best in their field. Drive into Adventure: Rent Cars, Plan Trips, Explore Destinations!
+                        </p>
+                    </div>
+                    <a href="">
+                        Visit website
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__main">
+                    <div class="footer__links">
+                        <div class="footer__links_wrapper">
+                            <div class="footer__nav_wrapper">
+                                <nav class="footer__nav">
+                                    <p>
+                                        CUSTOMER
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                FAQs
+                                            </a>
+                                            <a href="">
+                                                Orders and delivery
+                                            </a>
+                                            <a href="">
+                                                Returns and refunds
+                                            </a>
+                                            <a href="">
+                                                Payment and pricing
+                                            </a>
+                                            <a href="">
+                                                Privacy
+                                            </a>
+                                            <a href="">
+                                                Cookies
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <nav class="footer__nav">
+                                    <p>
+                                        ABOUT
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                About
+                                            </a>
+                                            <a href="">
+                                                Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <p>©2024 Fill.ge. All rights reserved</p>
+                    </div>
+                    <div class="footer__newsletter">
+                        <div class="footer__newsletter_wrapper">
+                            <p>
+                                Subscribe to the newsletter now
+                            </p>
+                            <form action="">
+                                <input type="email" placeholder="Your email">
+                                <button type="submit">
+                                    <img src="assets/images/footer/icons/submit.svg" alt="">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="back">
+                    <img src="assets/images/footer/icons/back.svg" alt="">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
