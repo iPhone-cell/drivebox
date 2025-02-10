@@ -379,6 +379,41 @@ ul li {
     list-style-type: none;
 }
 
+.slick-arrow {
+    font-size: 0;
+    background: #000;
+    height: 48px;
+    position: absolute;
+    top: 50%;
+    border-radius: 6px;
+    width: 26px;
+    z-index: 1;
+}
+
+.slick-arrow svg {
+    width: 32px;
+    height: 24px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    left: -8px;
+    top: 18px;
+    fill: #fff;
+}
+
+.slick-arrow.slick-next {
+    right: 0;
+}
+
+.slick-arrow.slick-prev {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.slick-arrow.slick-disabled {
+    display: none !important;
+}
+
 .header {
     background: #000;
 }
@@ -394,9 +429,15 @@ ul li {
     height: 64px;
 }
 
+.wishlist_btn p span.yellow {
+    color: #ebeb47 !important;
+}
+
 .header__icon svg {
     width: 24px;
     height: 24px;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
     fill: #fff;
 }
 
@@ -1279,12 +1320,21 @@ ul li {
 }
 
 .you_may_also_like__row {
-    margin-top: 64px;
+    margin-top: 24px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 24px;
+}
+
+.you_may_also_like__row:first-child {
+    margin-top: 64px;
+}
+
+#popularSlider .slick-track {
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .you_may_also_like__card {
@@ -1293,6 +1343,23 @@ ul li {
     background: #fff;
     position: relative;
     color: #000;
+}
+
+.you_may_also_like__card.slick-slide {
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.you_may_also_like__card.slick-slide:first-child {
+    margin-left: 0;
+}
+
+.you_may_also_like__card.slick-slide:last-child {
+    margin-right: 0;
+}
+
+.you_may_also_like__card.slick-slide img {
+    width: 100%;
 }
 
 .you_may_also_like__card:hover {
@@ -1317,6 +1384,8 @@ ul li {
 
 .you_may_also_like__card_stars {
     margin-right: 4px;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .you_may_also_like__card_title {
@@ -1329,9 +1398,19 @@ ul li {
 
 .you_may_also_like__card_wish {
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 20px;
+    top: 20px;
+    right: 20px;
+}
+
+.you_may_also_like__card_wish svg {
+    fill: none;
+    transition: all 0.5s ease;
+    stroke: #000;
+    stroke-width: 2px;
+    width: 60px;
+    height: 32px;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
 }
 
 .you_may_also_like__card_sale {
@@ -1365,4 +1444,104 @@ ul li {
 
 .you_may_also_like__card_price_sale .sale {
     color: #d92626;
+}
+
+.pagination {
+    margin-top: 40px;
+    font-size: 13px;
+    margin-bottom: 80px;
+}
+
+.pagination p {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.pagination__main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.pagination__links a {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #9a9a9a;
+}
+
+.pagination__links a.active {
+    color: #000;
+}
+
+.pagination__links a:hover {
+    color: #000;
+}
+
+.pagination__arrows button {
+    border-radius: 6px;
+    width: 58px;
+    height: 48px;
+    background: #000;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+.pagination__arrows button svg {
+    width: 32px;
+    height: 100%;
+    -webkit-transform: translateX(-25%) translateY(20%) rotate(90deg);
+    transform: translateX(-25%) translateY(20%) rotate(90deg);
+    fill: #fff;
+}
+
+.pagination__arrows button:last-child {
+    margin-right: 0;
+}
+
+.pagination__arrows button.prev {
+    background: #fff;
+    border: 1px solid #d1d1d1;
+}
+
+.pagination__arrows button.prev svg {
+    fill: #000;
+    -webkit-transform: translateX(25%) translateY(-16%) rotate(-90deg);
+    transform: translateX(25%) translateY(-16%) rotate(-90deg);
+}
+
+.discount {
+    padding: 8px 0;
+    background: #ebeb47;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 30px;
+    font-size: 15px;
+    text-align: center;
+    color: #000;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.discount .close span {
+    width: 16px;
+    height: 2px;
+    display: block;
+    background-color: black;
+    border-radius: 2px;
+}
+
+.discount .close span:first-child {
+    -webkit-transform: rotate(45deg) translate(1px, 0px);
+    transform: rotate(45deg) translate(1px, 0px);
+}
+
+.discount .close span:last-child {
+    -webkit-transform: rotate(-45deg) translate(1px, 0px);
+    transform: rotate(-45deg) translate(1px, 0px);
+}
+
+.discount.none {
+    display: none;
 }
