@@ -1120,10 +1120,13 @@ ul li {
 }
 
 .you_may_also_like__row {
-  margin-top: 64px;
+  margin-top: 24px;
   display: flex;
   justify-content: space-between;
   gap: 24px;
+}
+.you_may_also_like__row:first-child {
+  margin-top: 64px;
 }
 
 .you_may_also_like__card {
@@ -1195,4 +1198,57 @@ ul li {
 }
 .you_may_also_like__card_price_sale .sale {
   color: #d92626;
+}
+
+.pagination {
+  margin-top: 40px;
+  font-size: 13px;
+  margin-bottom: 80px;
+}
+.pagination p {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.pagination__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination__links a {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #9a9a9a;
+}
+.pagination__links a.active {
+  color: #000;
+}
+.pagination__links a:hover {
+  color: #000;
+}
+
+.pagination__arrows button {
+  border-radius: 6px;
+  width: 58px;
+  height: 48px;
+  background: #000;
+  margin-right: 10px;
+  border: 1px solid #000;
+}
+.pagination__arrows button svg {
+  width: 32px;
+  height: 100%;
+  transform: translateX(-25%) translateY(20%) rotate(90deg);
+  fill: #fff;
+}
+.pagination__arrows button:last-child {
+  margin-right: 0;
+}
+.pagination__arrows button.prev {
+  background: #fff;
+  border: 1px solid #d1d1d1;
+}
+.pagination__arrows button.prev svg {
+  fill: #000;
+  transform: translateX(25%) translateY(-16%) rotate(-90deg);
 }
